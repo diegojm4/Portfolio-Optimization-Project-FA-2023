@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Optimization</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif; /* Modern font family */
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif; /* Modern font family */
+        }
+        form {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Portfolio Optimization</h1>
+    <form method="POST" action="/">
+        <label for="desired_return">Desired Annual Rate of Return:</label>
+        <input type="text" name="desired_return" required>
+        <br>
+        <label for="max_risk">Maximum Risk:</label>
+        <input type="text" name="max_risk" required>
+        <br>
+        <input type="submit" value="Optimize Portfolio">
+    </form>
+</body>
+</html>
+
